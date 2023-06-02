@@ -18,7 +18,6 @@ def read_phu(input):
     tyBinaryBlob  = struct.unpack(">i", bytes.fromhex("FFFFFFFF"))[0]
 
     inputfile = open(input, "rb")
-    output = pd.DataFrame(columns=['Counts'])
 
     # Check if inputfile is a valid PHU file
     # Python strings don't have terminating NULL characters, so they're stripped
